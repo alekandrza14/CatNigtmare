@@ -10,8 +10,10 @@ public class fristPersonControler : MonoBehaviour
     public Rigidbody rb;
     public GameObject[] g;
     public person camRejime;
+    public LayerMask layerMask;
+    public LayerMask layerMask1;
     Camera _camera;
-
+    [SerializeField] MultyTransform multyTransform;
     static private fristPersonControler find;
     public static fristPersonControler main()
     {
@@ -47,12 +49,12 @@ public class fristPersonControler : MonoBehaviour
         if (camRejime == person.first)
         {
             _camera = g[2].GetComponent<Camera>();
-            _camera.cullingMask = 11101;
+            _camera.cullingMask = layerMask;
         }
         if (camRejime == person.trid)
         {
             _camera = g[2].GetComponent<Camera>();
-            _camera.cullingMask = 11111;
+            _camera.cullingMask = layerMask1;
         }
         if (Input.GetKey(KeyCode.Mouse1))
         {
@@ -107,6 +109,6 @@ public class fristPersonControler : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
        if((rb.linearVelocity.x+ rb.linearVelocity.z) <= 1) rb.MovePosition( ((transform.right * Input.GetAxisRaw("Horizontal")+ transform.forward * Input.GetAxisRaw("Vertical"))/6)* (VarSave.GetInt("Bonus_Speed") == 1 ? 3 : 1) + transform.position);
-      
+        multyTransform.W_Position += Input.GetAxisRaw("Vertical1") * Time.deltaTime * 3;
     }
 }
