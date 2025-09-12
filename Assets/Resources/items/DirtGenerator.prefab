@@ -60,10 +60,13 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2a119af13fe985545b2c27cb49022732, type: 2}
+  - {fileID: 2100000, guid: efb94aa0b6ad1f448b76218042ae34d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -151,7 +154,6 @@ GameObject:
   - component: {fileID: 9057453544036156726}
   - component: {fileID: 2040352355345925629}
   - component: {fileID: 8543774440880769987}
-  - component: {fileID: 252553547019442027}
   m_Layer: 0
   m_Name: DirtGenerator
   m_TagString: Untagged
@@ -213,19 +215,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &252553547019442027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4993038976597577032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2231eaea7d453974c9b9e2f34d03a8ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  money: {fileID: 4993038976597577032, guid: 4298e63b29be80e4b8c5fb6835197e5d, type: 3}
 --- !u!1 &8318167862798018549
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,6 +273,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
