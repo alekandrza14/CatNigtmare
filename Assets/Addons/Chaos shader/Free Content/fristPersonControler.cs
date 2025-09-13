@@ -31,6 +31,7 @@ public class fristPersonControler : MonoBehaviour
         {
             if (hit.distance <= 1.5f && Input.GetKey(KeyCode.Space))
             {
+                Instantiate(g[3],transform.position,Quaternion.identity);
                 rb.AddForce(Vector3.up*(50 * Time.deltaTime) * (VarSave.GetInt("Bonus_Jump") == 1 ? 3 : 1), ForceMode.Impulse);
             }
         }
