@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 1092647159015184522}
   - component: {fileID: 74385527612008474}
   - component: {fileID: 301771775901034256}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,8 +130,8 @@ Transform:
   m_GameObject: {fileID: 3350856106083926624}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0029, y: -0.361, z: -0.035}
-  m_LocalScale: {x: 0.4680652, y: -0.0029361837, z: 0.25752226}
+  m_LocalPosition: {x: 0.0029, y: -0.363, z: -0.035}
+  m_LocalScale: {x: 0.43058255, y: -0.0029361837, z: 0.2932406}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2614000878214799597}
@@ -151,7 +151,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3350856106083926624}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -209,7 +209,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 232.99, z: 0}
 --- !u!1 &4460724335812255274
 GameObject:
   m_ObjectHideFlags: 0

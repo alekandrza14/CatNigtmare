@@ -23,8 +23,11 @@ public class fristPersonControler : MonoBehaviour
         }
         return find;
     }
+    int y = 0;
     void Update()
     {
+        y++;
+        ScreenCapture.CaptureScreenshot(Application.dataPath+"/screen/image"+y+".png");
         Ray r = new Ray(transform.position,Vector3.down);
         RaycastHit hit;
         if (Physics.Raycast(r,out hit))
